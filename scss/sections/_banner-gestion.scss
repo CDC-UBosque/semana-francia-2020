@@ -1,0 +1,26 @@
+/* ---------------------------------- Banner gestion -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.banner_gestion{
+	@include max-width-2;
+	margin-top: 10rem;
+	text-align: center;
+	padding: 1rem;
+	background: transparentize($color_green, .85);
+	
+	@media (max-width: $breakpoint_1){
+		margin-top: 5rem;
+	}
+	
+	h2{
+		display: inline-block;
+		font-size: 25px;
+		line-height: 29px;
+	}
+	
+}
+
+
+
+

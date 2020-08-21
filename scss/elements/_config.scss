@@ -1,0 +1,47 @@
+/* ------------------------ calculos bootstrap ------------------------
+------------------------------------------------------------------------ */
+$breakpoint_1: 1199px;
+$breakpoint_2: 991px;
+$breakpoint_3: 768px;
+$breakpoint_3_1: 600px;
+$breakpoint_4: 500px;
+$breakpoint_5: 400px;
+
+$color_text: #000000;
+$color_text_darker: #393939;
+$color-brand-white: #ffffff;
+$color_green: #9FC939;
+$color_green_dark: #008776;
+$color_lime: #DBE800;
+$color_light_grey: #F7F7F7;
+$color_yellow: #FAE20B;
+
+
+
+
+// -----------------------
+// font family acherus
+// -----------------------
+$font_acherus_black: 'acherus_grotesqueblack'; // black
+$font_acherus_black_italic: 'acherus_grotesqueblack_italic'; // black light
+$font_acherus_bold: 'acherus_grotesquebold'; // bold
+$font_acherus_bold_italic: 'acherus_grotesquebold_italic'; // bold italic
+$font_acherus_extrabold: 'acherus_grotesqueextrabold'; // extrabold
+$font_acherus_extrabold_italic: 'acherus_grotesqueXBdIt'; // extrabold italic
+$font_acherus_regular_italic: 'acherus_grotesqueRgIt'; // regular italic
+$font_acherus_light: 'acherus_grotesquelight'; // light
+$font_acherus_light_italic: 'acherus_grotesquelight_italic'; // light italic
+$font_acherus_medium: 'acherus_grotesquemedium'; // medium
+$font_acherus_medium_italic: 'acherus_grotesqueMdIt'; // medium italic
+$font_acherus_regular: 'acherus_grotesqueregular'; // medium italic
+$font_acherus_thin: 'acherus_grotesquethin'; // thin
+$font_acherus_thin_italic: 'acherus_grotesquethin_italic'; // thin italic
+$font_acherus_ultralight: 'acherus_grotesqueultralight'; // ultralight
+$font_acherus_ultralight_italic: 'acherus_grotesqueultraLtIt'; // ultralight italic
+$font_acherus_ultralight_italic: 'acherus_grotesqueultraLtIt'; // ultralight italic
+
+
+// -----------------------
+// font family DIN
+// -----------------------
+$font_family_din: din-2014, sans-serif;

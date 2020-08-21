@@ -1,0 +1,201 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Apoyos Financieros
+
+//- Content page
+block content
+
+	+header-back-u
+			
+	header
+		div.logo
+			img(src='../../images/svg/logo-U.svg' alt='Universidad El Bosque')
+			a(href='https://artemisa.unbosque.edu.co/serviciosacademicos/consulta/prematricula/inscripcionestudiante/ingresoPagoDerechosMatriculaPregrado.php' target='_blank')
+				img(src='../../images/svg/logo-PSE.svg' alt='PSE')
+				| Pagos
+		div.content_header
+			div.txt
+				h1 Financia tus sueños
+				p Descubre todas las facilidades de pago y opciones de financiación que hemos creado pensando en ti, porque ¡siempre habrá un medio para cumplir tus sueños!
+
+			div.banner
+				img(src='../../images/photos/banner_header.jpg' alt='Apoyos financieros')
+				
+			div.vigilada
+				span Vigilada Mineducación
+		
+	
+	
+	section.opciones
+		div.txt
+			div
+				h2 Me interesa financiar el  pago de la matrícula
+				p En la Universidad El Bosque sabemos lo importante que es contar con alternativas financieras que te permitan asegurar el desarrollo exitoso de tus estudios. Por esta razón, hemos diseñado diversas opciones en las cuales podrás encontrar el apoyo que buscas para matricularte.
+		
+		div.boxes
+		
+			div.box.acordion1
+				img(src='../../images/photos/Logo-Icetex.jpg' alt='Icetex')
+				a.more_btn
+				div.boxes_mobile
+					+acordion-1
+					
+			div.box.acordion2
+				img(src='../../images/photos/Logo-Pichincha.jpg' alt='Banco Pichincha')
+				a.more_btn
+				div.boxes_mobile
+					+acordion-2
+					
+			div.box.acordion3
+				img(src='../../images/photos/Logo-Financiar.jpg' alt='Financiar')
+				a.more_btn
+				div.boxes_mobile
+					+acordion-3
+					
+					
+			div.boxes_desktop
+				+acordion-1
+				+acordion-2
+				+acordion-3
+				
+			div.box.acordion4
+				img(src='../../images/photos/Logo-fincomercio.jpg' alt='Fincomercio')
+				a.more_btn
+				div.boxes_mobile
+					+acordion-4
+					
+			div.box.acordion5
+				img(src='../../images/photos/Logo-fundacion-michelsen.jpg' alt='Fundación Michelsen')
+				a.more_btn
+				div.boxes_mobile
+					+acordion-5
+					
+			div.box.acordion6
+				img(src='../../images/photos/logo-banco-de-bogota.jpg' alt='Banco de Bogotá')
+				a.more_btn
+				div.boxes_mobile
+					+acordion-6
+					
+					
+			div.boxes_desktop
+				+acordion-4
+				+acordion-5
+				+acordion-6
+				
+				
+			div.box.acordion7
+				img(src='../../images/photos/logo-sufi.jpg' alt='Sufi')
+				a.more_btn
+				div.boxes_mobile
+					+acordion-7
+					
+			div.box.acordion8
+				img(src='../../images/photos/Logo-Lumni-1.jpg' alt='Lumni')
+				a.more_btn
+				div.boxes_mobile
+					+acordion-8
+					
+					
+			div.boxes_desktop
+				+acordion-7
+				+acordion-8
+				
+		
+		
+	section.renovacion
+		div.txt
+			h2 Necesito renovar mi crédito
+			p Selecciona una de las siguientes opciones.
+			div.caja.credito_universidad
+				img(src='../../images/svg/Icons-universidad.svg' alt='Universidad El Bosque')
+				p Tengo crédito con la Universidad
+				a.btn_yellow Ver más
+				div.resultados.resultados_credito
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					div.renovaciones_UEB
+						h3 Renovación con la Universidad El Bosque
+						h4 Condiciones
+						ul
+							li Tasa 1,0 % para semestre  2020-2
+							li Plazo 4 cuotas
+							li Financia hasta 70% del valor matrícula
+							li No aplica para créditos nuevos solo existentes desde 2019-2
+							
+						h4 Paso a paso:
+						ol
+							li Diligencia y firma el formato Solicitud de crédito educativo con tu codeudor solidario. <a href="documentos/solicitud_credito_educativo.pdf" target="_blank"> Mira la solicitud de crédito educativo aquí</a>
+							li Realiza la simulación de crédito en: <a href="https://bit.ly/2D9lTHn" target="_blank">https://bit.ly/2D9lTHn</a>
+							li Escanéa los documentos del paso 1 y 2 y adjunta el certificado laboral del deudor solidario (o constancia de ingresos certificada, si es independiente). 
+							li Guarda todo en un solo archivo con el nombre del estudiante y envíalo a <a href="mailto:creditodirecto@unbosque.edu.co" target="_blank">creditodirecto@unbosque.edu.co</a>
+							li El asunto del correo debe decir ‘Renovación crédito’, la fecha del año y semestre que está por comenzar. Ejemplo: Renovación crédito 2020-2
+							
+						h4 Importante:
+						p No olvides que debes enviar los documentos con máximo 5 días hábiles antes del vencimiento del pago ordinario. Si los documentos están mal diligenciados, estos no serán tramitados. Quedarás matriculado una vez hayas realizado el pago de las órdenes (cuota inicial y estudio de crédito)
+				
+			div.caja
+				img(src='../../images/svg/Icons-credito.svg' alt='Crédito')
+				p Tengo crédito con el Icetex
+				a.btn_yellow(href='https://docs.google.com/forms/d/e/1FAIpQLSfv-hksAYMEGmvoS_5RIPhKEqigj27d_ybxKq_Kk9kNwAw20w/viewform?usp=sf_link' target='_blank') Ver más
+			
+			
+				
+		div.image
+			img(src='../../images/photos/renovacion.jpg' alt='Renovación')
+			
+			
+	section.formularios
+		div.content_formularios
+			div.image
+				img(src='../../images/photos/formularios.jpg' alt='Formularios')
+			div.txt
+				h2 Ingresa a los formularios para preinscribirte a alguna de las siguientes opciones:
+				div.caja
+					img(src='../../images/svg/Icons-info.svg' alt='Información')
+					p Todos en el aula - Lumni
+					a.btn_yellow(href='https://docs.google.com/forms/d/e/1FAIpQLSfn94cPjeZ7e_hfH5UIg-lgYY1EdUjypmEuTq0ae3ZrQkNOlg/viewform?usp=sf_link' target='_blank') Ver más
+				div.caja
+					img(src='../../images/svg/Icons-no-aprobado.svg' alt='No aprobado')
+					p Mi crédito no fue aprobado por entidades financieras
+					a.btn_yellow(href='https://docs.google.com/forms/d/e/1FAIpQLSfi0xtSb2Fm_clWGuODJa7LVoM8_i1RIyu7OIgXxxfLE6yMLQ/viewform?usp=sf_link' target='_blank') Ver más
+					
+					
+					
+	section.banner_gestion
+		div
+			h2 ¿No has podido gestionar exitosamente tu crédito?
+			a.btn_yellow(href='https://universidadelbosque2020.setmore.com' target='_blank') Solicita tu cita
+			
+			
+	section.calendario
+		h2 Calendario académico
+		div.cajas
+			div.caja
+				img(src='../../images/svg/Icons-info.svg' alt='Información')
+				p CALENDARIO POSGRADO
+				a.btn_yellow(href='https://www.unbosque.edu.co/sites/default/files/comunica/inscripciones/A-00650____Calendario-Academico-Posgrados-2020-2.pdf' target='_blank') Ver más
+			div.caja
+				img(src='../../images/svg/Icons-no-aprobado.svg' alt='No aprobado')
+				p CALENDARIO PREGRADO	
+				a.btn_yellow(href='https://www.unbosque.edu.co/sites/default/files/comunica/mailings2020/A-00594-Calendario-Matriculas-2020-2.pdf' target='_blank') Ver más
+				
+				
+	section.banner_creser
+		div.content
+			div.txt
+				h2 Conoce el programa CreSer: becas y estímulos.
+				a.btn_yellow(href='https://programacreser.unbosque.edu.co' target='_blank') Entrando aquí
+			div.image
+				img(src='../../images/photos/creser.jpg' alt='Creser')
+			
+			
+
+			
+			
+	+footer
+	
+	
+	
+	
+	

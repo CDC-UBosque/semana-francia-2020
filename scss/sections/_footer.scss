@@ -1,0 +1,106 @@
+/* ---------------------------------- footer -----------------------------
+	------------------------------------------------------------------------------- */
+
+.whatsapp{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	bottom: 0;
+	z-index: 3;
+	@include max-width;
+	margin: 6rem auto 0;
+	
+	.content{
+		background: $color_yellow;
+		max-width: 15rem;
+		padding: 0.5rem 2rem;
+		border-radius: 10rem;
+		border: 4px solid $color-brand-white;
+		grid-gap: .5rem;
+		justify-items: center;
+		align-items: center;
+		@include display-grid;
+		@include grid-parent-2-columns (2rem, 1fr);
+		
+		img{
+			display: inline-block;
+		}
+		
+		a{
+			@include font_universal (
+				$font_family_line_height: 15px,
+				$font_family_weight: 700,
+				$font_family_size: 14px,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_family_din
+			);
+			margin-right: .3rem;
+			padding: 0;
+		}
+		
+	}
+	
+}
+	
+footer{
+	text-align: center;
+	padding: 1rem 2rem 2rem;
+	margin-top: -2rem;
+	position: relative;
+	z-index: 1;
+	background: transparentize($color_green, .85);
+	
+	.contact_info{
+		text-align: left;
+		grid-gap: 3rem;
+		@include max-width;
+		padding: 3rem 0 1rem;
+		@include display-grid;
+		@include grid-parent-2-columns (1fr, 1fr);
+		
+		@media (max-width: $breakpoint_3_1){
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		.horario{
+			justify-self: end;
+			grid-gap: 1rem;
+			@include display-grid;
+			@include grid-parent-2-columns (3rem, 1fr);
+			
+			@media (max-width: $breakpoint_3_1){
+				justify-self: initial;
+			}
+			
+		}
+		
+		.contacto{
+			grid-gap: 1rem;
+			@include display-grid;
+			@include grid-parent-2-columns (3rem, 1fr);
+		}
+		
+		p{
+			@include font_universal (
+				$font_family_line_height: 19px,
+				$font_family_weight: 300,
+				$font_family_size: 16px,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_family_din
+			);
+			margin: .5rem 0 0;
+		}
+		
+		a{
+			padding: 0;
+		}
+		
+		
+	}
+	
+}
+
+
+
+

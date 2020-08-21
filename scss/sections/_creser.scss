@@ -1,0 +1,71 @@
+/* ---------------------------------- Creser -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.banner_creser{
+	margin-top: 7rem;
+	
+	.content{
+		@include max-width-2;
+		background: $color_yellow;
+		@include display-grid;
+		@include grid-parent-2-columns (1.5fr, 1fr);
+		
+		@media (max-width: $breakpoint_3){
+			text-align: center;
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		.txt{
+			padding: 1.5rem;
+			
+			h2{
+				@include font_universal (
+					$font_family_line_height: 30px ,
+					$font_family_weight: 300,
+					$font_family_size: 29px,
+					$font_family_color: $color_text,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_acherus_light
+				);
+			}
+			
+			a{
+				margin: 1rem 0 0;
+				background: $color-brand-white;
+			}
+			
+		}
+		
+		.image{
+			max-width: 370px;
+			position: relative;
+			margin-bottom: 1.5rem;
+			
+			@media (max-width: $breakpoint_3){
+				place-self: center;
+			}
+			
+			img{
+				position: absolute;
+				margin-top: -1rem;
+				
+				@media (max-width: $breakpoint_1){
+					margin-top: 0
+				}
+				
+				@media (max-width: $breakpoint_3){
+					position: initial;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+

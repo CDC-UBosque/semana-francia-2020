@@ -1,0 +1,61 @@
+/* ---------------------------------- Formularios -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.formularios{
+	max-width: initial;
+	background: $color_green;
+	
+	.content_formularios{
+		grid-gap: 2rem;
+		@include max-width;
+		@include display-grid;
+		@include grid-parent-2-columns (1fr, 1fr);
+		margin-top: 12rem;
+		
+		@media (max-width: $breakpoint_2){
+			margin-top: 7rem;
+		}
+		
+		@media (max-width: $breakpoint_3){
+			margin-top: 10rem;
+			@include grid-parent-1-columns (1fr);
+		}
+	
+		.image{
+			position: relative;
+			img{
+				position: absolute;
+				margin-top:-6rem;
+				
+				@media (max-width: $breakpoint_2){
+					margin-top:-3rem;
+				}
+				
+				@media (max-width: $breakpoint_3){
+					margin-top: -3rem;
+					position: initial;
+				}
+				
+			}
+		}
+		
+		.txt{
+			padding: 2rem 0;
+			
+			h2{
+				margin-bottom: 2rem;
+			}
+			
+		}
+		
+		.caja{
+			@include caja;
+		}
+	}
+	
+}
+
+
+
+

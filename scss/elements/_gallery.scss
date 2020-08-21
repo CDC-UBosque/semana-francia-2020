@@ -1,0 +1,93 @@
+/* ---------------------------------- Gallery  -----------------------------
+	------------------------------------------------------------------------------- */
+
+.node {
+	
+	.field--name-field-imagen-galeria{
+		float: none;
+		margin: 0;
+		
+		.jcarousel-wrapper{
+			width: 100%;
+			margin: 1rem 0 2rem;
+			border: 0;
+			max-width: initial;
+			height: 212px;
+			@include prefix(border-radius, 0, webkit moz);
+			@include prefix(box-shadow, none, webkit moz);
+			
+			.jcarousel{
+				height: auto;
+			}
+			
+			// ------------------------------------------
+			// container
+			// ------------------------------------------
+			.jcarousel-container-horizontal{
+				display: inline-block;
+				
+				li{
+					width: 212px;
+					height: 212px;
+					margin-right: 1rem;
+					
+					img{
+						margin: 0;
+						object-fit: cover;
+						height: 100% !important;
+						@include prefix(border-radius, 0, webkit moz);
+					}
+					
+				}
+				
+			}
+			
+			// ------------------------------------------
+			// previous and next general button
+			// ------------------------------------------
+			.jcarousel-control-prev,
+			.jcarousel-control-next{
+				bottom: -3.5rem;
+				top: initial;
+				text-shadow: none;
+				width: 40px;
+				height: 40px;
+				@include prefix(border-radius, 0, webkit moz);
+				@include prefix(box-shadow, none, webkit moz);
+				
+				&:after{
+					display: none;
+				}
+				
+				&:hover{
+					opacity: .8;
+				}
+				
+			}
+			
+			// ------------------------------------------
+			// previous button
+			// ------------------------------------------
+			.jcarousel-control-prev{
+				background: url('../images/icons/prev.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				left: initial;
+				right: 50px;
+			}
+			
+			// ------------------------------------------
+			// next button
+			// ------------------------------------------
+			.jcarousel-control-next{
+				background: url('../images/icons/next.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				right: 0;
+			}
+			
+		}
+		
+	}
+	
+}

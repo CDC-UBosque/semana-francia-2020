@@ -1,0 +1,105 @@
+html{
+	//@media (pointer:coarse){
+	//	overflow-x: hidden;
+	//}
+	-webkit-overflow-scrolling:touch;
+	
+	body{
+		position: relative;
+		overflow-x: hidden;
+		height: 100%;
+		word-break: break-word;
+		display: block;
+		margin: 0;
+		@include prefix(transition, all 0.3s ease, webkit moz o ms);
+		@include font_universal (
+			$font_family_line_height: 23px,
+			$font_family_weight: 200,
+			$font_family_size: 18px,
+			$font_family_color: $color_text,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_family_din
+		);
+		@media (pointer:coarse){
+			overflow-x: hidden;
+		}
+		
+		img{
+			max-width: 100%;
+			height: auto;
+			image-rendering: -webkit-optimize-contrast;
+			display: block;
+			@include prefix(transition, all 0.3s ease, webkit moz o ms);
+			
+			&:hover{
+				//@include prefix(box-shadow, 0px 10px 24px rgba(0,0,0,0.3), webkit moz);
+			}
+			
+		}
+		
+		a{
+			text-decoration: underline;
+			padding: .3rem 0;
+			display: inline-block;
+			text-decoration: none;
+			position: relative;
+			color: $color_green_dark;
+			@include prefix(transition, all 0.3s ease, webkit moz o ms);
+			
+			&:after{
+				content: "";
+				position: absolute;
+				background: $color_green_dark;
+				width: 0;
+				height: 1px;
+				bottom: 1px;
+				left: 0;
+				@include prefix(transition, all 0.3s ease, webkit moz o ms);
+			}
+			
+			&:hover{
+				&:after{
+					content: "";
+					position: absolute;
+					background: $color_green_dark;
+					width: 100%;
+					height: 1px;
+				}
+			}
+			
+		}
+		
+		::after, ::before{
+			@include prefix(transition, all 0.3s ease, webkit moz o ms);
+		}
+		
+		ul {
+			list-style: none; /* Remove default bullets */
+			margin: 0;
+		}
+		
+		ul li::before {
+			content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+			color: $color_text; /* Change the color */
+			font-weight: bold; /* If you want it to be bold */
+			display: inline-block; /* Needed to add space between the bullet and the text */
+			width: 1em; /* Also needed for space (tweak if needed) */
+			margin-left: -1em; /* Also needed for space (tweak if needed) */
+		}
+		
+		a.btn_yellow{
+			@include btn_yellow;
+		}
+		
+		div.btn_more{
+			text-align: center;
+		}
+		
+		p{
+			@include max-width-p;
+		}
+
+
+	}
+	
+}

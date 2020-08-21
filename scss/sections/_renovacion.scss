@@ -1,0 +1,71 @@
+/* ---------------------------------- Opciones -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.renovacion{
+	grid-gap: 2rem;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	
+	@media (max-width: $breakpoint_3){
+		@include grid-parent-1-columns (1fr);
+	}
+	
+	.txt{
+		
+		h3{
+			@include font_universal (
+				$font_family_line_height: 25px ,
+				$font_family_weight: 300,
+				$font_family_size: 20px,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_acherus_black
+			);
+		}
+		
+		h4{
+			@include font_universal (
+				$font_family_line_height: 20px ,
+				$font_family_weight: 300,
+				$font_family_size: 16px,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_acherus_black
+			);
+			margin: .5rem 0;
+		}
+		
+	}
+	
+	.caja{
+		@include caja;
+		position: relative;
+	}
+	
+	.resultados{
+		display: none;
+		padding: 1rem;
+		position: relative;
+		border-top: 2px solid transparentize($color_green_dark, .85);
+		background: $color-brand-white;
+		@include grid-child-column (1, 4);
+		
+		.close-button{
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			cursor: pointer;
+		}
+		
+	}
+	
+	.resultados.open{
+		display: block;
+	}
+	
+}
+
+
+
+

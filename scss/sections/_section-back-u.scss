@@ -1,0 +1,36 @@
+/* ---------------------------------- back u  -----------------------------
+	------------------------------------------------------------------------------- */
+
+.back{
+	margin: 0;
+	padding: 0rem;
+	background: $color_yellow;
+	width: 100%;
+	max-width: 100%;
+	
+	section{
+		margin: 0 auto;
+		padding: 0 2rem;;
+		
+		i{
+			color: $color_text;
+		}
+		
+		a{
+			color: $color-brand-white;
+			@include font_universal (
+				$font_family_line_height: 14px,
+				$font_family_weight: 300,
+				$font_family_size: 13px,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_acherus_light
+			);
+		}
+		
+	}
+	
+}
+
+
+
