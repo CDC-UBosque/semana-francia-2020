@@ -8,13 +8,10 @@ $breakpoint_4: 500px;
 $breakpoint_5: 400px;
 
 $color_text: #000000;
-$color_text_darker: #393939;
-$color-brand-white: #ffffff;
-$color_green: #9FC939;
-$color_green_dark: #008776;
-$color_lime: #DBE800;
-$color_light_grey: #F7F7F7;
-$color_yellow: #FAE20B;
+$color_blue: #003093;
+$color_red: #EE2E2A;
+$color_white: #ffffff;
+$color_red_light: #EE2E2A;
 
 
 
@@ -45,3 +42,8 @@ $font_acherus_ultralight_italic: 'acherus_grotesqueultraLtIt'; // ultralight ita
 // font family DIN
 // -----------------------
 $font_family_din: din-2014, sans-serif;
+
+// -----------------------
+// font family Carista
+// -----------------------
+$font_family_carista: 'Carista';

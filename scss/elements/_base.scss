@@ -11,12 +11,13 @@ html{
 		word-break: break-word;
 		display: block;
 		margin: 0;
+		background: $color_blue;
 		@include prefix(transition, all 0.3s ease, webkit moz o ms);
 		@include font_universal (
 			$font_family_line_height: 23px,
 			$font_family_weight: 200,
 			$font_family_size: 18px,
-			$font_family_color: $color_text,
+			$font_family_color: $color_white,
 			$font_family_letter_spacing: 0,
 			$font_family_group: $font_family_din
 		);
@@ -43,13 +44,20 @@ html{
 			display: inline-block;
 			text-decoration: none;
 			position: relative;
-			color: $color_green_dark;
 			@include prefix(transition, all 0.3s ease, webkit moz o ms);
+			@include font_universal (
+				$font_family_line_height: 23px,
+				$font_family_weight: 600,
+				$font_family_size: 18px,
+				$font_family_color: $color_white,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_family_din
+			);
 			
 			&:after{
 				content: "";
 				position: absolute;
-				background: $color_green_dark;
+				background: $color_white;
 				width: 0;
 				height: 1px;
 				bottom: 1px;
@@ -61,7 +69,7 @@ html{
 				&:after{
 					content: "";
 					position: absolute;
-					background: $color_green_dark;
+					background: $color_white;
 					width: 100%;
 					height: 1px;
 				}
@@ -78,27 +86,40 @@ html{
 			margin: 0;
 		}
 		
-		ul li::before {
-			content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-			color: $color_text; /* Change the color */
-			font-weight: bold; /* If you want it to be bold */
-			display: inline-block; /* Needed to add space between the bullet and the text */
-			width: 1em; /* Also needed for space (tweak if needed) */
-			margin-left: -1em; /* Also needed for space (tweak if needed) */
-		}
+		/*ul li::before {
+			content: "\2022";  
+			color: $color_text; 
+			font-weight: bold; 
+			display: inline-block; 
+			width: 1em; 
+			margin-left: -1em; 
+		}*/
 		
-		a.btn_yellow{
-			@include btn_yellow;
-		}
-		
-		div.btn_more{
-			text-align: center;
+		a.btn_red{
+			@include btn_red;
 		}
 		
 		p{
 			@include max-width-p;
 		}
-
+		
+		p.comillas{
+			position: relative;
+			padding-left: 2rem;
+			
+			&:before{
+				position: absolute;
+				content: "";
+				background: url('../../images/svg/comillas.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 12px;
+				height:17px;
+				left: 0;
+				top: 0;
+			}
+			
+		}
 
 	}
 	

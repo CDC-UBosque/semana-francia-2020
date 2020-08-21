@@ -1,0 +1,41 @@
+/* ---------------------------------- agenda semestral  -----------------------------
+	------------------------------------------------------------------------------- */
+
+section.number_two{
+	margin-top: 0;
+	text-align: center;
+	background: rgb(238,46,42);
+	background: -moz-linear-gradient(180deg, rgba(238,46,42,1) 0%, rgba(217,4,0,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(238,46,42,1) 0%, rgba(217,4,0,1) 100%);
+	background: linear-gradient(180deg, rgba(238,46,42,1) 0%, rgba(217,4,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee2e2a",endColorstr="#d90400",GradientType=1);
+	
+	h1.script{
+		position: relative;
+		display: inline-block;
+		@include font_universal (
+			$font_family_line_height: 100px,
+			$font_family_weight: 300,
+			$font_family_size: 100px,
+			$font_family_color: $color_white,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_family_carista
+		);
+		
+		&:before{
+			position: absolute;
+			content: "";
+			background: url('../../images/svg/adorno.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 43px;
+			height:49px;
+			left: 7rem;
+			top: -1rem;
+		}
+		
+	}
+	
+}
+
+

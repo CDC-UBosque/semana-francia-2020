@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Carista';
+    src: url('Carista.eot');
+    src: local('Carista'),
+        url('Carista.eot?#iefix') format('embedded-opentype'),
+        url('Carista.woff2') format('woff2'),
+        url('Carista.woff') format('woff'),
+        url('Carista.ttf') format('truetype'),
+        url('Carista.svg#Carista') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

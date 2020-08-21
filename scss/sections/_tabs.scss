@@ -1,0 +1,112 @@
+/* ---------------------------------- tabs  -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+.tabs{
+	max-width: 730px;
+	margin: auto;
+	
+	
+	ul{
+		padding: 0;
+		
+		li{
+			display: inline-block;
+			
+			a{
+				display: block;
+				background: $color_red_light;
+				@include font_universal (
+					$font_family_line_height: 35px,
+					$font_family_weight: 300,
+					$font_family_size: 35px,
+					$font_family_color: $color_white,
+					$font_family_letter_spacing: -1px,
+					$font_family_group: $font_acherus_black
+				);
+				
+				span{
+					display: block;
+					@include font_universal (
+						$font_family_line_height: 25px,
+						$font_family_weight: 300,
+						$font_family_size: 20px,
+						$font_family_color: $color_white,
+						$font_family_letter_spacing: -1px,
+						$font_family_group: $font_acherus_extrabold
+					);
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	.ui-tabs-panel{
+		grid-gap: 1rem;
+		padding: 1rem;
+		@include display-grid;
+		@include grid-parent-2-columns (1fr, 1fr);
+		
+		.content_left{
+			position: relative;
+			@include display-grid;
+			@include grid-parent-1-columns (1fr);
+			
+			img{
+				z-index: 1;
+				@include grid-child-column (1, 2);
+				@include grid-child-row (1, 2);
+			}
+			
+			span{
+				position: relative;
+				z-index: 2;
+				display: block;
+				text-align: left;
+				padding: 2.8rem 6rem 5rem 2.5rem;
+				@include font_universal (
+					$font_family_line_height: 45px,
+					$font_family_weight: 300,
+					$font_family_size: 45px,
+					$font_family_color: $color_white,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_family_carista
+				);
+				@include grid-child-column (1, 2);
+				@include grid-child-row (1, 2);
+			}
+			
+		}
+		
+		.content_right{
+			text-align: left;
+			
+			h4{
+				position: relative;
+				margin-bottom: 2rem;
+				
+				&:after{
+					position: absolute;
+					content: "";
+					width: 37px;
+					height: 4px;
+					background: $color_white;
+					left: 0;
+					bottom: -1rem;
+				}
+				
+			}
+			
+			p{
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+

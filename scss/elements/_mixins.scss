@@ -254,7 +254,7 @@ $font_family_group: $family) {
 // ------------------------ max widths --------------------------- //
 // --------------------------------------------------- //
 @mixin max-width{
-	max-width: 1180px;
+	max-width: 1400px;
 	margin: auto;
 }
 
@@ -270,21 +270,21 @@ $font_family_group: $family) {
 
 // ------------------------ buttons --------------------------- //
 // --------------------------------------------------- //
-@mixin btn_yellow{
-	background: $color_yellow;
-	border: 2px solid $color_yellow;
+@mixin btn_red{
+	background: $color_red;
+	border: 2px solid $color_red;
 	border-radius: 5rem;
 	padding: 0.6rem 1rem;
 	margin: 1rem;
 	cursor: pointer;
 	display: inline-block;
 	@include font_universal (
-		$font_family_line_height: 26px,
-		$font_family_weight: 300,
+		$font_family_line_height: 23px,
+		$font_family_weight: 600,
 		$font_family_size: 18px,
-		$font_family_color: $color_text,
+		$font_family_color: $color_white,
 		$font_family_letter_spacing: 0,
-		$font_family_group: $font_acherus_bold
+		$font_family_group: $font_family_din
 	);
 	img{
 		display: inline-block;
@@ -295,140 +295,8 @@ $font_family_group: $family) {
 		display: none;
 	}
 	&:hover{
-		background: $color-brand-white;
+		background: $color_white;
 		color: $color_text;
 	}
 }
-
-@mixin btn_white{
-	background: $color-brand-white;
-	border: 2px solid $color_yellow;
-	border-radius: 5rem;
-	padding: 0.6rem 1rem;
-	margin: 1rem;
-	cursor: pointer;
-	display: inline-block;
-	@include font_universal (
-		$font_family_line_height: 26px,
-		$font_family_weight: 300,
-		$font_family_size: 18px,
-		$font_family_color: $color_text,
-		$font_family_letter_spacing: 0,
-		$font_family_group: $font_acherus_bold
-	);
-	img{
-		display: inline-block;
-		margin-right: .5rem;
-		vertical-align: middle;
-	}
-	&:after{
-		display: none;
-	}
-	&:hover{
-		background: $color_yellow;
-		color: $color_text;
-	}
-}
-
-
-// ------------------------ Boxes --------------------------- //
-// --------------------------------------------------- //
-@mixin boxes{
-	padding: 1rem 2rem;
-	background: transparentize($color_green, .85);
-	position: relative;
-	
-	.close-button{
-		position: absolute;
-		top: -0.9rem;
-		right: -0.7rem;
-		cursor: pointer;
-		background: url('../../images/svg/x-btn.svg');
-		background-repeat: no-repeat;
-		background-position: center;
-		height: 1.7rem;
-		width: 1.7rem;
-		
-		&:hover{
-			background: url('../../images/svg/x-btn-green.svg');
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-		
-	}
-}
-
-// ------------------------ Cajas --------------------------- //
-// --------------------------------------------------- //
-@mixin caja{
-	align-items: center;
-	background: $color-brand-white;
-	border: 2px solid transparentize($color_green_dark, .85);
-	@include display-grid;
-	@include grid-parent-3-columns (0.5fr, 2fr, 9rem);
-	margin-bottom: 1.5rem;
-	max-width: 31rem;
-	
-	&:last-child{
-		margin-bottom: 0;
-	}
-	
-	img{
-		justify-self: center;
-		margin: 0 .5rem;
-	}
-	
-	p{
-		margin: 0 .5rem;
-	}
-	
-	a{
-		place-self: center;
-		font-size: 16px;
-		line-height: 18px;
-	}
-	
-	a.open{
-		@include btn_white;
-		font-size: 16px;
-		line-height: 18px;
-	}
-	
-}
-
-
-
-// ------------------------ Cajas --------------------------- //
-// --------------------------------------------------- //
-
-@mixin slider_left{
-	position: absolute;
-	right: 0;
-	z-index: 100;
-	top: 50%;
-	cursor: pointer;
-	
-	@media (max-width: $breakpoint_3){
-		position: relative;
-		top: initial;
-		display: inline-block;
-		margin-left: .5rem
-	}
-}
-
-@mixin slider_right{
-	position: absolute;
-	left: 0;
-	z-index: 100;
-	top: 50%;
-	cursor: pointer;
-	
-	@media (max-width: $breakpoint_3){
-		position: relative;
-		top: initial;
-		display: inline-block;
-		margin-right: .5rem
-	}
-}
-
 

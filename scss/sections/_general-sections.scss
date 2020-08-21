@@ -1,0 +1,73 @@
+/* ---------------------------------- general sections  -----------------------------
+	------------------------------------------------------------------------------- */
+
+section{
+	position: relative;
+	
+	.content{
+		padding: 2rem;
+		@include max-width;
+	}
+	
+}
+
+section.diagonal{
+	margin-top: -19rem;
+	//margin-top: calc( (1 / 1 * (100% + 39rem) ) - 500px);
+	.image_triangle{
+		width: 100%;
+		//background: $color_blue;
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+		
+		.content{
+			position: relative;
+			top: -5rem;
+			@include display-grid;
+			@include grid-parent-2-columns (1fr, 1fr);
+			
+			.comillas{
+				max-width: 430px;
+				margin: auto;
+				@include grid-child-column (2, 3);
+				@include grid-child-row (1, 2);
+			}
+			
+		}	
+		
+	}
+	
+}
+
+section.red{
+	background: $color_red;
+}
+
+section.number_one{
+	margin-top: -7rem;
+	padding-top: 5rem;
+	
+	.content{
+		max-width: 1130px;
+		margin: auto;
+		@include display-grid;
+		@include grid-parent-2-columns (1fr, 2fr);
+		
+		div{
+			
+			&:nth-child(2){
+				align-items: center;
+				@include display-grid;
+				@include grid-parent-2-columns (1fr, 5fr);
+			}
+			
+		}
+		
+	}	
+	
+}
+
+

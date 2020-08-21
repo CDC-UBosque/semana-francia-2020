@@ -5,18 +5,11 @@
 @import 'elements/_artifacts';
 @import 'elements/_base';
 @import 'elements/_typography';
-@import 'elements/_sections';
 @import 'elements/_video';
 
 
 // ------------------------------------ Section elements ------------------------------------ 
-@import 'sections/_section-back-u';
 @import 'sections/_header';
-@import 'sections/_opciones';
-@import 'sections/_rotabanner';
-@import 'sections/_renovacion';
-@import 'sections/_formularios';
-@import 'sections/_banner-gestion';
-@import 'sections/_calendario';
-@import 'sections/_creser';
-@import 'sections/_footer';
+@import 'sections/_general-sections';
+@import 'sections/_agenda-semestral';
+@import 'sections/_tabs';

@@ -1,26 +1,30 @@
 h1{
 	word-break: break-word;
-	display: inline-block;
 	position: relative;
 	@include font_universal (
-		$font_family_line_height: 47px,
+		$font_family_line_height: 59px,
 		$font_family_weight: 300,
-		$font_family_size: 38px,
-		$font_family_color: $color_green_dark,
-		$font_family_letter_spacing: 0,
+		$font_family_size: 48px,
+		$font_family_color: $color_white,
+		$font_family_letter_spacing: -1px,
 		$font_family_group: $font_acherus_black
 	);
-	@media (max-width: $breakpoint_2){
-		font-size: 33px;
-		line-height: 33px;
-	};
-	
-	@media (max-width: $breakpoint_4){
-		font-size: 22px;
-		line-height: 23px;
-		word-break: break-all;
-	};
 }
+
+h1.script{
+	word-break: break-word;
+	position: relative;
+	@include font_universal (
+		$font_family_line_height: 125px,
+		$font_family_weight: 300,
+		$font_family_size: 125px,
+		$font_family_color: $color_red,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_family_carista
+	);
+}
+
+
 
 h2{
 	word-break: break-word;
@@ -54,13 +58,14 @@ h3{
 h4{
 	word-break: break-word;
 	display: block;
+	text-transform: uppercase;
 	@include font_universal (
-		$font_family_line_height: 18px,
+		$font_family_line_height: 21px,
 		$font_family_weight: 300,
-		$font_family_size: 16px,
-		$font_family_color: $color_text,
-		$font_family_letter_spacing: 0,
-		$font_family_group: $font_acherus_ultralight
+		$font_family_size: 17px,
+		$font_family_color: $color_white,
+		$font_family_letter_spacing: 1px,
+		$font_family_group: $font_acherus_regular
 	);
 	
 	b{
