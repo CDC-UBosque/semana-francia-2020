@@ -12,9 +12,18 @@
 		
 		li{
 			display: inline-block;
+			margin-right: 1rem;
+			position: relative;
+			margin-bottom: 1rem;
+			
+			&:last-child{
+				margin-right: 0;
+			}
 			
 			a{
 				display: block;
+				padding: 1rem;
+				border-radius: 1rem;
 				background: $color_red_light;
 				@include font_universal (
 					$font_family_line_height: 35px,
@@ -41,9 +50,19 @@
 			
 		}
 		
+		.ui-state-active{
+			top: 1rem;
+			
+			a{
+				background: $color_blue;
+			}
+			
+		}
+		
 	}
 	
 	.ui-tabs-panel{
+		margin-top: 1.5rem;
 		grid-gap: 1rem;
 		padding: 1rem;
 		@include display-grid;
@@ -65,7 +84,7 @@
 				z-index: 2;
 				display: block;
 				text-align: left;
-				padding: 2.8rem 6rem 5rem 2.5rem;
+				padding: 1.5rem 6rem 5rem 2.5rem;
 				@include font_universal (
 					$font_family_line_height: 45px,
 					$font_family_weight: 300,

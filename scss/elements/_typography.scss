@@ -9,6 +9,12 @@ h1{
 		$font_family_letter_spacing: -1px,
 		$font_family_group: $font_acherus_black
 	);
+	
+	@media (max-width: $breakpoint_1){
+		font-size: 40px;
+		line-height: 42px;
+	}
+	
 }
 
 h1.script{
@@ -22,6 +28,12 @@ h1.script{
 		$font_family_letter_spacing: 0,
 		$font_family_group: $font_family_carista
 	);
+	
+	@media (max-width: $breakpoint_1){
+		font-size: 85px;
+		line-height: 85px;
+	}
+	
 }
 
 
@@ -83,11 +95,12 @@ h5{
 	word-break: break-word;
 	display: block;
 	margin: 0;
+	text-transform: uppercase;
 	@include font_universal (
 		$font_family_line_height: 20px,
 		$font_family_weight: 700,
 		$font_family_size: 16px,
-		$font_family_color: $color_text,
+		$font_family_color: $color_red,
 		$font_family_letter_spacing: 0,
 		$font_family_group: $font_family_din
 	);

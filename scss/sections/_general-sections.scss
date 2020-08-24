@@ -12,7 +12,7 @@ section{
 }
 
 section.diagonal{
-	margin-top: -19rem;
+	//margin-top: -19rem;
 	//margin-top: calc( (1 / 1 * (100% + 39rem) ) - 500px);
 	.image_triangle{
 		width: 100%;
@@ -28,6 +28,11 @@ section.diagonal{
 			top: -5rem;
 			@include display-grid;
 			@include grid-parent-2-columns (1fr, 1fr);
+			
+			@media (max-width: 820px){
+				top: 0rem;
+				background: $color_red;
+			}
 			
 			.comillas{
 				max-width: 430px;
@@ -46,9 +51,17 @@ section.red{
 	background: $color_red;
 }
 
+section.white{
+	background: $color_white;
+}
+
 section.number_one{
 	margin-top: -7rem;
 	padding-top: 5rem;
+	
+	@media (max-width: 820px){
+		margin-top: 0rem;
+	}
 	
 	.content{
 		max-width: 1130px;

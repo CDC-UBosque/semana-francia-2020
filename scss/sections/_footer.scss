@@ -1,0 +1,84 @@
+/* ---------------------------------- agenda semestral  -----------------------------
+	------------------------------------------------------------------------------- */
+
+footer{
+	padding: 9rem 0 3rem;
+	background: $color_white;
+	
+	.content{
+		@include max-width;
+		margin-bottom: 2rem;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+		
+		p{
+			margin: .5rem auto;
+			@include font_universal (
+				$font_family_line_height: 18px,
+				$font_family_weight: 200,
+				$font_family_size: 14px,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_family_din
+			);
+		}
+		
+		a{
+			@include font_universal (
+				$font_family_line_height: 18px,
+				$font_family_weight: 200,
+				$font_family_size: 14px,
+				$font_family_color: $color_red,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_family_din
+			);
+			
+			&:after{
+				position: absolute;
+				content: "";
+				background: $color_red;
+				bottom: 0rem;
+				 width: 100%;
+			}
+			
+		}
+		
+	}
+	
+	.legal_footer{
+		text-align: center;
+	}
+	
+	.top{
+		position: relative;
+		padding-top: 2rem;
+		grid-gap: 1.5rem;
+		border-top: 1px solid $color_grey_light;
+		@include display-grid;
+		@include grid-parent-3-columns (.5fr, 1fr, 1fr);
+		
+		&:before{
+			position: absolute;
+			content: "";
+			background: url('../../images/svg/gallo-blanco-2.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 87px;
+			height:77px;
+			left: -1rem;
+			top: -5rem;
+		}
+		
+		.organiza_footer{
+			grid-gap: 1.5rem;
+			@include display-grid;
+			@include grid-parent-2-columns (1fr, 1fr);
+		}
+		
+	}
+	
+}
+
+

@@ -1,0 +1,138 @@
+/* ---------------------------------- agenda semestral  -----------------------------
+	------------------------------------------------------------------------------- */
+
+section.explora_francia{
+	background: $color_red;
+	
+	.content{
+		position: relative;
+		z-index: 2;
+		top: -14rem;
+		background: $color_blue;
+		
+		&:before{
+			position: absolute;
+			content: "";
+			background: url('../../images/svg/gallo-azul.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 120px;
+			height:120px;
+			right: 3rem;
+			top: -7rem;
+		}
+		
+		.box_content{
+			text-align: center;
+			
+			h1.script{
+				position: relative;
+				display: inline-block;
+				@include font_universal (
+					$font_family_line_height: 100px,
+					$font_family_weight: 300,
+					$font_family_size: 100px,
+					$font_family_color: $color_white,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_family_carista
+				);
+				
+			}
+			
+			// buttons
+			.button-group{
+				
+				button{
+					background: none;
+					border: 2px solid $color_red;
+					padding: 1rem;
+					border-radius: 5rem;
+					text-transform: uppercase;
+					cursor: pointer;
+					margin-right: 1rem;
+					@include prefix(transition, all 0.3s ease, webkit moz o ms);
+					@include font_universal (
+						$font_family_line_height: 20px,
+						$font_family_weight: 400,
+						$font_family_size: 16px,
+						$font_family_color: $color_white,
+						$font_family_letter_spacing: 0,
+						$font_family_group: $font_family_din
+					);
+					
+					&:hover{
+						background: $color_red;
+						border: 2px solid $color_red;
+					}
+					
+					&:active{
+						background: $color_red;
+						border: 2px solid $color_red;
+					}
+					
+					&:focus{
+						border: none;
+					}
+					
+					&:last-child{
+						margin-right: 0;
+					}
+					
+				}
+				
+				button.is-checked{
+					background: $color_red;
+					border: 2px solid $color_red;
+				}
+				
+				
+				
+			}
+			
+			// grid
+			.grid{
+				margin-top: 2rem;
+				
+				.element-item { 
+					width: 18%; 
+					margin-bottom: 2rem;
+					border-radius: 1rem;
+					overflow: hidden;
+					background: $color_white;
+					
+					a{
+						display: contents;
+						
+						&:hover{
+							p{
+								text-decoration: underline;
+							}
+						}
+						
+					}
+					
+					p{
+						text-align: left;
+						width: 80%;
+						margin: 1rem auto;
+						@include font_universal (
+							$font_family_line_height: 23px,
+							$font_family_weight: 300,
+							$font_family_size: 18px,
+							$font_family_color: $color_text,
+							$font_family_letter_spacing: 0,
+							$font_family_group: $font_family_din
+						);
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+

@@ -16,9 +16,9 @@ block content
 				img(src='../../images/svg/logoueb.svg' alt='Universidad El Bosque')
 			nav
 				ul
-					li: a(href='#' target='_blank') semestre de francia 
-					li: a(href='#' target='_blank') agenda semestral 
-					li: a(href='#' target='_blank') explora francia 
+					li: a(href='#' ) semestre de francia 
+					li: a(href='#agenda') agenda semestral 
+					li: a(href='#explora') explora francia 
 			
 			div.left_content
 				div: img(src='../../images/svg/semestre-francia-globo.svg' alt='Semestre de francia')
@@ -47,7 +47,7 @@ block content
 				
 	
 	
-	section.red.number_two
+	section.red.number_two#agenda
 		div.content
 			h1.script Agenda Semestral
 			
@@ -62,6 +62,22 @@ block content
 					li
 						a(href="#tabs-3") 13 
 							span Oct
+					li
+						a(href="#tabs-4") 16 
+							span Oct
+					li
+						a(href="#tabs-5") 27 
+							span Oct
+					li
+						a(href="#tabs-6") 21 
+							span Oct
+					li
+						a(href="#tabs-7") 4 
+							span Nov
+					li
+						a(href="#tabs-8") 17 
+							span Nov		
+						
 					
 				div#tabs-1
 					div.content_left
@@ -71,33 +87,332 @@ block content
 						h4 agenda de cooperación
 						p Invitado
 						p Honorable Embajador de Francia en Colombia Sr. Gautier Mignot
+						img(src='../../images/photos/agenda-de-cooperacion/Conferencia-Embajador-de-Francia.png' alt='Conferencia embajador de francia') 
+						
 						
 				div#tabs-2
 					div.content_left
-						div.tabs_script
-							span Inauguración semestre virtual de Francia
+						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
+						span Oportunidades de estudio en Francia
 					div.content_right
-						h4 agenda de cooperación 2
-						p Invitado
-						p Honorable Embajador de Francia en Colombia Sr. Gautier Mignot
+						h4 agenda de cooperación
+						p 10:00 a.m.
+						p Campus France
+						img(src='../../images/photos/agenda-de-cooperacion/Conferencia-Oportunidades-de-estudio-en-Francia-Campus-France.png' alt='Conferencia oportunidades de estudio en Francia') 
 						
 				div#tabs-3
 					div.content_left
-						div.tabs_script
-							span Inauguración semestre virtual de Francia
+						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
+						span Los corredores logísticos estratégicos
 					div.content_right
-						h4 agenda de cooperación 3
-						p Invitado
-						p Honorable Embajador de Francia en Colombia Sr. Gautier Mignot
+						h4 agenda académica
+						p 9:00 a.m.
+						p ISEL
+						img(src='../../images/photos/agenda-academica/ISEL.png' alt='ISEL') 
 						
+				div#tabs-4
+					div.content_left
+						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
+						span Desórdenes psiquiátricos en adolescentes
+					div.content_right
+						h4 agenda académica
+						p 8:30 a.m.
+						p Paris descartes
+						img(src='../../images/photos/agenda-academica/Paris-Descartes.png' alt='Paris descartes') 
+						
+				div#tabs-5
+					div.content_left
+						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
+						span La economía informal y la productividad nacional
+					div.content_right
+						h4 agenda académica
+						p 9:00 a.m.
+						p EM Normandie
+						img(src='../../images/photos/agenda-academica/EM_Normandie-Logo.jpg' alt='EM Normandie') 
+						
+				div#tabs-6
+					div.content_left
+						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
+						span Red de cooperación en investigación Colombia - Francia
+					div.content_right
+						h4 agenda de investigación
+						p 3:00 p.m.
+						p COLIFRI
+						img(src='../../images/photos/agenda-investigacion/colifri.jpg' alt='EM Normandie') 
+						
+				div#tabs-7
+					div.content_left
+						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
+						span Sostenibilidad y marketing
+					div.content_right
+						h4 agenda de emprendimiento
+						p 10:00 a.m.
+						p L´Oreal
+						img(src='../../images/photos/agenda-emprendimiento/L-Oreal.png' alt='L-Oreal.png') 
+						
+				div#tabs-8
+					div.content_left
+						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
+						span Inclusión
+					div.content_right
+						h4 agenda de emprendimiento
+						p 10:00 a.m.
+						p Essilor
+						img(src='../../images/photos/agenda-emprendimiento/Essilor.png' alt='Essilor') 
+						
+						
+						
+	section.diagonal_two
+		div.image_triangle
+			img(src='../../images/svg/triangle-red-2.svg' alt='bg-red')
 			
-		
-				
 			
+	
+	section.explora_francia#explora
+		div.content
+			div.box_content
+				h1.script Explora francia
+			
+				div.button-group.filters-button-group
+					<button class="button is-checked" data-filter="*">mostrar todos</button>
+					<button class="button" data-filter=".viaja">viaja a francia desde tu casa</button>
+					<button class="button" data-filter=".gastronomia">gastronomía</button>
+					<button class="button" data-filter=".arte">arte</button>
+					<button class="button" data-filter=".banda">la banda sonora</button>
+					<button class="button" data-filter=".eventos">eventos y festivales</button>
+					<button class="button" data-filter=".literatura">la literatura</button>
 				
+				div.grid
+					//-
+					//- Viaja a francia desde tu casa
+					//-
+					div.element-item.viaja(data-category="viaja")
+						a(href='http://www.sacre-coeur-montmartre.com/francais/histoire-et-visite/article/visite-virtuelle-panoramique-de-la' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/viajar/la-basilica.jpg' alt='La basílica del Sacrée Coeur de Montmartre')
+								p La basílica del Sacrée Coeur de Montmartre
+							
+					div.element-item.viaja(data-category="viaja")
+						a(href='https://artsandculture.google.com/partner/tour-eiffel' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/viajar/La-torre-Eiffel.jpg' alt='La torre Eiffel')
+								p La torre Eiffel
+							
+					div.element-item.viaja(data-category="viaja")
+						a(href='https://www.louvre.fr/en/visites-en-ligne' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/viajar/El-Museo-del-Louvre.jpg' alt='El Museo del Louvre')
+								p El Museo del Louvre
+							
+					div.element-item.viaja(data-category="viaja")
+						a(href='https://www.youtube.com/playlist?list=PLN7fqTii7EQXyaISBNm2l2Sp4sAUneqi7' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/viajar/360.jpg' alt='Visita 360')
+								p  Rennes Visita 360°
+								
+					div.element-item.viaja(data-category="viaja")
+						a(href='https://www.360cities.net/search?utf8=%E2%9C%93&query=france' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/viajar/360.jpg' alt='Visita 360')
+								p Fotos panorámicas Visita 360°
+					
+					//-
+					//- Gastronomia
+					//-
+					div.element-item.gastronomia(data-category="gastronomia")
+						a(href='https://es.france.fr/es/provenza/articulo/directo-receta-ratatouille' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/gastronomia/ratatouille-receta.jpg' alt='Ratatouille')
+								p Ratatouille
+								
+					div.element-item.gastronomia(data-category="gastronomia")
+						a(href='https://es.france.fr/es/actualidad/lista/torrijas-papilles-pupilles' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/gastronomia/Torrijas.jpg' alt='Torrijas de Papilles')
+								p Torrijas de Papilles
+								
+					div.element-item.gastronomia(data-category="gastronomia")
+						a(href='https://es.france.fr/es/alsacia-lorena/articulo/receta-de-la-quiche-lorraine-clasica-y-muy-facil' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/gastronomia/quiche.jpg' alt='Quiche Lorraine')
+								p Quiche Lorraine
+								
+								
+					div.element-item.gastronomia(data-category="gastronomia")
+						a(href='https://es.france.fr/es/auvernia/lista/clafoutis-bergamote-et-family' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/gastronomia/Claffoutis.jpg' alt='Clafoutis')
+								p Clafoutis
+								
+					div.element-item.gastronomia(data-category="gastronomia")
+						a(href='https://es.france.fr/es/bretana/lista/5-minutos-para-saberlo-todo-sobre-las-crepes-bretonas' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/gastronomia/crepes.jpg' alt='Crepes ')
+								p Crepes 
+								
+					div.element-item.gastronomia(data-category="gastronomia")
+						a(href='https://es.france.fr/es/actualidad/articulo/receta-del-croissant-o-cruasan' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/gastronomia/croissant.jpg' alt='Croissant ')
+								p Croissant 
+						
+					
+					//-
+					//- arte
+					//-
+					div.element-item.arte(data-category="arte")
+						a(href='https://archeologie.culture.fr/lascaux/fr' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/arte/Cueva-de-Lascaux.jpg' alt='Cueva de Lascaux')
+								p Cueva de Lascaux
+								
+					div.element-item.arte(data-category="arte")
+						a(href='https://artsandculture.google.com/partner/palace-of-versailles?date=1550' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/arte/Castillo-de-Versailles.jpg' alt='Castillo de Versailles')
+								p Castillo de Versailles
+								
+					div.element-item.arte(data-category="arte")
+						a(href='https://artsandculture.google.com/partner/musee-dorsay-paris' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/arte/Museo-d_Orsey.jpg' alt="Museo d'Orsey")
+								p Museo d'Orsey
+								
+					div.element-item.arte(data-category="arte")
+						a(href='http://galaxie.mdig.fr/#/galaxie' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/arte/Museo-de-los-impresionistas-Giverny.jpg' alt='Museo de los impresionistas Giverny')
+								p Museo de los impresionistas Giverny
+								
+					div.element-item.arte(data-category="arte")
+						a(href='http://www.allocine.fr/video/player_gen_cmedia=18653636&cfilm=27063.html' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/arte/Amelie.jpg' alt='“Amélie” (Jean-Pierre Jeunet, 2001): Trailer')
+								p “Amélie” (Jean-Pierre Jeunet, 2001): Trailer
+								
+					div.element-item.arte(data-category="arte")
+						a(href='http://www.allocine.fr/film/fichefilm_gen_cfilm=124055.html' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/arte/Et_si_on_vivait_tous_ensemble.jpg' alt='Et si on vivait tous ensemble ? Trailer')
+								p Et si on vivait tous ensemble ? Trailer
+								
+					div.element-item.arte(data-category="arte")
+						a(href='http://www.allocine.fr/film/fichefilm_gen_cfilm=182745.html' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/arte/Untouchable.jpg' alt='Intouchable: Trailer')
+								p Intouchable: Trailer
+								
+					
+					//-
+					//- Banda
+					//-
+					div.element-item.banda(data-category="banda")
+						a(href='https://www.deezer.com/fr/playlist/7406250044' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/banda/banda-1.jpg' alt='Música para la mañana')
+								p Música para la mañana
+								
+								
+					div.element-item.banda(data-category="banda")
+						a(href='https://www.deezer.com/fr/playlist/7406671484' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/banda/banda-2.jpg' alt='Música para la siesta')
+								p Música para la siesta
+								
+					div.element-item.banda(data-category="banda")
+						a(href='https://www.deezer.com/fr/playlist/7406621464' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/banda/banda-3.jpg' alt='Estilos urbanos')
+								p Estilos urbanos
+								
+					
+					
+					//-
+					//- Eventos
+					//-
+					div.element-item.eventos(data-category="eventos")
+						a(href='https://es.france.fr/es/ahora-en-francia/roland-garros-paris' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/eventos/Roland-Garros.jpg' alt='Roland Garros')
+								p Roland Garros
+								
+								
+					div.element-item.eventos(data-category="eventos")
+						a(href='https://es.france.fr/es/ahora-en-francia/tour-de-france' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/eventos/tour-france.jpg' alt='Tour de France')
+								p Tour de France
+								
+								
+					//-
+					//- Literatura
+					//-
+					div.element-item.literatura(data-category="literatura")
+						a(href='#' target='_blank')
+							div.gallery_image
+								img(src='../../images/photos/literatura/principito.jpg' alt='Principito')
+								p Principito
+								
+					div.element-item.literatura(data-category="literatura")
+						a(href='#' target='_blank')
+							div.gallery_image
+								//-img(src='images/photos/literatura/Roland-Garros.jpg' alt='Tandém')
+								p Tandém
+								
 		
-	
-	
-	
-	
-	
+	section.white.aliados_semestre
+		div.content
+			h1.script Aliados del semestre de francia
+			
+			div.logos_aliados
+				div: img(src='../../images/photos/aliados/logoAmb-Colombie.jpg' alt='Ambassade de france en colombie')
+				
+				div: img(src='../../images/photos/aliados/campus-france.jpg' alt='Campus France')
+					
+			
+			
+	footer
+		div.content.top
+			div.logo_footer
+				img(src='../../images/svg/logoueb-footer.svg' alt='Universidad El Bosque')
+				
+			div.contact_footer
+				h5 contacto
+				
+				p Juan Pérez
+				
+				p: a(href='mailto:info.internacionalizacion@unbosque.edu.co' target='_blank') info.internacionalizacion@unbosque.edu.co
+				
+				p PBX.: 648 9000 <br/>
+					| Ext.:1471 - 1162 - 1183<br/>
+					| Línea gratuita:<br/>
+					| 018000 113033<br/>
+					| Edificio Fundadores <br/>
+					| Av. Cra 9 No. 131 A - 02, Sexto piso
+					
+					
+					
+			div.organiza_footer
+				div
+					img(src='../../images/svg/gallo-rojo.svg' alt='Dónde encuentro la facultad')
+					
+				div
+					h5 organiza:
+					
+					p.red Universidad El Bosque <br/>
+						| Área de relaciones Internacionales
+						
+					h5.grey Colaboradores:
+					
+					p Ambassade de France en Colombie <br/>
+						| Campus France
+						
+						
+		div.content
+			div.legal_footer
+				p Vigilada Mineducación. Personería Jurídica otorgada mediante resolución 11153 del 4 de Agosto de 1978.
+						
+						
+						
+						
+						

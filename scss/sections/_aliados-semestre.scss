@@ -1,0 +1,54 @@
+/* ---------------------------------- aliados semestre  -----------------------------
+	------------------------------------------------------------------------------- */
+
+section.aliados_semestre{
+	
+	.content{
+		text-align: center;
+		
+		h1.script{
+			position: relative;
+			display: inline-block;
+			color: $color_blue;
+			margin: 5rem auto 3rem;
+			
+			&:before{
+				position: absolute;
+				content: "";
+				background: url('../../images/svg/adorno-azul.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 43px;
+				height:49px;
+				left: -1rem;
+				top: -1rem;
+			}
+			
+		}
+		
+		.logos_aliados{
+			max-width: 1000px;
+			margin: auto;
+			grid-gap: 1rem;
+			@include display-grid;
+			@include grid-parent-2-columns (1fr, 1fr);
+			
+			>div{
+				
+				&:first-child{
+					margin-right: 5rem;
+				}
+				
+				&:last-child{
+					margin-left: 5rem;
+				}
+				
+			}
+			
+		}
+	
+	}
+	
+}
+
+

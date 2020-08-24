@@ -256,6 +256,11 @@ $font_family_group: $family) {
 @mixin max-width{
 	max-width: 1400px;
 	margin: auto;
+	
+	@media (max-width: 1400px){
+		padding: 0 1.5rem;
+	}
+	
 }
 
 @mixin max-width-2{
