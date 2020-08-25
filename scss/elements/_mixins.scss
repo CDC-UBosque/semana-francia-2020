@@ -270,6 +270,7 @@ $font_family_group: $family) {
 
 @mixin max-width-p{
 	max-width: 780px;
+	margin: auto;
 }
 
 
@@ -303,6 +304,37 @@ $font_family_group: $family) {
 	&:hover{
 		background: $color_white;
 		color: $color_text;
+	}
+}
+
+@mixin btn_white{
+	background: $color_white;
+	border: 2px solid $color_white;
+	border-radius: 5rem;
+	padding: 0.6rem 1rem;
+	margin: 1rem;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	@include font_universal (
+		$font_family_line_height: 23px,
+		$font_family_weight: 600,
+		$font_family_size: 18px,
+		$font_family_color: $color_red,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_family_din
+	);
+	img{
+		display: inline-block;
+		margin-right: .5rem;
+		vertical-align: middle;
+	}
+	&:after{
+		display: none;
+	}
+	&:hover{
+		background: $color_red;
+		color: $color_white;
 	}
 }
 

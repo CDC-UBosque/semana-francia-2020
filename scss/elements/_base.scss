@@ -99,6 +99,10 @@ html{
 			@include btn_red;
 		}
 		
+		a.btn_white{
+			@include btn_white;
+		}
+		
 		p{
 			@include max-width-p;
 		}
