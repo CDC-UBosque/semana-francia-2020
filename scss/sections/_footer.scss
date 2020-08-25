@@ -59,6 +59,15 @@ footer{
 		@include display-grid;
 		@include grid-parent-3-columns (.5fr, 1fr, 1fr);
 		
+		@media (max-width: $breakpoint_3){
+			@include grid-parent-2-columns (1fr, 1fr);
+		}
+		
+		@media (max-width: $breakpoint_5){
+			text-align: center;
+			@include grid-parent-1-columns (1fr);
+		}
+		
 		&:before{
 			position: absolute;
 			content: "";
@@ -71,10 +80,44 @@ footer{
 			top: -5rem;
 		}
 		
+		.logo_footer{
+			
+			@media (max-width: $breakpoint_3){
+				justify-self: center;
+			}
+			
+			@media (max-width: $breakpoint_5){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (1, 2);
+			}
+			
+		}
+		
+		.contact_footer{
+			
+			@media (max-width: $breakpoint_5){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (2, 3);
+			}
+			
+		}
+		
 		.organiza_footer{
 			grid-gap: 1.5rem;
 			@include display-grid;
 			@include grid-parent-2-columns (1fr, 1fr);
+			
+			@media (max-width: $breakpoint_3){
+				@include grid-child-column (1, 3);
+				@include grid-child-row (2, 3);
+			}
+			
+			@media (max-width: $breakpoint_5){
+				@include grid-parent-1-columns (1fr);
+				@include grid-child-column (1, 2);
+				@include grid-child-row (3, 4);
+			}
+			
 		}
 		
 	}

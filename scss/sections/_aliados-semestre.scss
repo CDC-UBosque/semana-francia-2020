@@ -33,14 +33,32 @@ section.aliados_semestre{
 			@include display-grid;
 			@include grid-parent-2-columns (1fr, 1fr);
 			
+			@media (max-width: $breakpoint_2){
+				grid-gap: 2rem;
+			}
+			
+			@media (max-width: $breakpoint_4){
+				@include grid-parent-1-columns (1fr);
+			}
+			
 			>div{
 				
 				&:first-child{
 					margin-right: 5rem;
+					
+					@media (max-width: $breakpoint_2){
+						margin-right: 0rem;
+					}
+		
 				}
 				
 				&:last-child{
 					margin-left: 5rem;
+					
+					@media (max-width: $breakpoint_2){
+						margin-left: 0rem;
+					}
+					
 				}
 				
 			}

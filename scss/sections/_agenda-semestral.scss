@@ -22,6 +22,15 @@ section.number_two{
 			$font_family_group: $font_family_carista
 		);
 		
+		@media (max-width: $breakpoint_1){
+			font-size: 85px;
+			line-height: 66px;
+		}
+		
+		@media (max-width: $breakpoint_3){
+			margin: 3rem -2rem;
+		}
+		
 		&:before{
 			position: absolute;
 			content: "";
@@ -35,6 +44,8 @@ section.number_two{
 		}
 		
 	}
+	
+	
 	
 }
 

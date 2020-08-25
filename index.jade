@@ -9,14 +9,15 @@ block content
 			
 	header
 		div.bg_left_content
-			div: img(src='../../images/photos/banner-france.png' alt='Semestre de francia')
+			div.wow.slideInLeft: img(src='../../images/photos/banner-france.png' alt='Semestre de francia')
 			
 		div.header_content
 			div.logo
 				img(src='../../images/svg/logoueb.svg' alt='Universidad El Bosque')
 			nav
+				span.menu_mobile: img(src='../../images/svg/menu-icon.svg' alt='Semestre de francia menu')
 				ul
-					li: a(href='#' ) semestre de francia 
+					li: a(href='#semestre' ) semestre de francia 
 					li: a(href='#agenda') agenda semestral 
 					li: a(href='#explora') explora francia 
 			
@@ -38,7 +39,7 @@ block content
 				
 				
 			
-	section.red.number_one
+	section.red.number_one#semestre
 		div.content
 			div: img(src='../../images/svg/globo1.svg' alt='La educación francesa es un arte que inspira con su inventiva y su enfoque hacia la innovación.') 
 			div
@@ -66,11 +67,12 @@ block content
 						a(href="#tabs-4") 16 
 							span Oct
 					li
-						a(href="#tabs-5") 27 
+						a(href="#tabs-5") 21 
 							span Oct
 					li
-						a(href="#tabs-6") 21 
+						a(href="#tabs-6") 27 
 							span Oct
+					
 					li
 						a(href="#tabs-7") 4 
 							span Nov
@@ -79,7 +81,7 @@ block content
 							span Nov		
 						
 					
-				div#tabs-1
+				div#tabs-1.wow.slideInUp.timeit
 					div.content_left
 						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
 						span Inauguración semestre virtual de Francia
@@ -90,7 +92,7 @@ block content
 						img(src='../../images/photos/agenda-de-cooperacion/Conferencia-Embajador-de-Francia.png' alt='Conferencia embajador de francia') 
 						
 						
-				div#tabs-2
+				div#tabs-2.wow.slideInUp.timeit
 					div.content_left
 						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
 						span Oportunidades de estudio en Francia
@@ -100,7 +102,7 @@ block content
 						p Campus France
 						img(src='../../images/photos/agenda-de-cooperacion/Conferencia-Oportunidades-de-estudio-en-Francia-Campus-France.png' alt='Conferencia oportunidades de estudio en Francia') 
 						
-				div#tabs-3
+				div#tabs-3.wow.slideInUp.timeit
 					div.content_left
 						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
 						span Los corredores logísticos estratégicos
@@ -110,7 +112,7 @@ block content
 						p ISEL
 						img(src='../../images/photos/agenda-academica/ISEL.png' alt='ISEL') 
 						
-				div#tabs-4
+				div#tabs-4.wow.slideInUp
 					div.content_left
 						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
 						span Desórdenes psiquiátricos en adolescentes
@@ -120,7 +122,19 @@ block content
 						p Paris descartes
 						img(src='../../images/photos/agenda-academica/Paris-Descartes.png' alt='Paris descartes') 
 						
-				div#tabs-5
+				
+						
+				div#tabs-5.wow.slideInUp
+					div.content_left
+						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
+						span Red de cooperación en investigación Colombia - Francia
+					div.content_right
+						h4 agenda de investigación
+						p 3:00 p.m.
+						p COLIFRI
+						img(src='../../images/photos/agenda-investigacion/colifri.jpg' alt='Colifri') 
+						
+				div#tabs-6.wow.slideInUp
 					div.content_left
 						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
 						span La economía informal y la productividad nacional
@@ -130,17 +144,7 @@ block content
 						p EM Normandie
 						img(src='../../images/photos/agenda-academica/EM_Normandie-Logo.jpg' alt='EM Normandie') 
 						
-				div#tabs-6
-					div.content_left
-						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
-						span Red de cooperación en investigación Colombia - Francia
-					div.content_right
-						h4 agenda de investigación
-						p 3:00 p.m.
-						p COLIFRI
-						img(src='../../images/photos/agenda-investigacion/colifri.jpg' alt='EM Normandie') 
-						
-				div#tabs-7
+				div#tabs-7.wow.slideInUp
 					div.content_left
 						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
 						span Sostenibilidad y marketing
@@ -150,7 +154,7 @@ block content
 						p L´Oreal
 						img(src='../../images/photos/agenda-emprendimiento/L-Oreal.png' alt='L-Oreal.png') 
 						
-				div#tabs-8
+				div#tabs-8.wow.slideInUp
 					div.content_left
 						img(src='../../images/svg/globo-dias.svg' alt='Semestre de francia') 
 						span Inclusión
@@ -365,9 +369,9 @@ block content
 			h1.script Aliados del semestre de francia
 			
 			div.logos_aliados
-				div: img(src='../../images/photos/aliados/logoAmb-Colombie.jpg' alt='Ambassade de france en colombie')
+				div.wow.slideInLeft: img(src='../../images/photos/aliados/logoAmb-Colombie.jpg' alt='Ambassade de france en colombie')
 				
-				div: img(src='../../images/photos/aliados/campus-france.jpg' alt='Campus France')
+				div.wow.slideInRight: img(src='../../images/photos/aliados/campus-france.jpg' alt='Campus France')
 					
 			
 			
@@ -393,7 +397,7 @@ block content
 					
 					
 			div.organiza_footer
-				div
+				div.wow.slideInLeft
 					img(src='../../images/svg/gallo-rojo.svg' alt='Dónde encuentro la facultad')
 					
 				div

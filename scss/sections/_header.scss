@@ -76,6 +76,11 @@ header{
 			@include grid-child-column (1, 2);
 			@include grid-child-row (1, 2);
 			z-index: 2;
+			
+			@media (max-width: $breakpoint_3_1){
+				width: 7rem;
+				margin-right: 1rem;
+			}
 		
 		}
 		
@@ -85,10 +90,26 @@ header{
 			@include grid-child-row (1, 2);
 			z-index: 2;
 			
+			@media (max-width: $breakpoint_3_1){
+				text-align: right;
+			}
+			
+			.menu_mobile{
+				display: none;
+				cursor: pointer;
+				@media (max-width: $breakpoint_3_1){
+					display: inline-block;
+				}
+			}
+			
 			ul{
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
+				
+				@media (max-width: $breakpoint_3_1){
+					display: none;
+				}
 				
 				li{
 					display: inline-block;
@@ -103,6 +124,20 @@ header{
 						
 					}
 					
+				}
+				
+			}
+			
+			.open{
+				display: block;
+				background: $color_blue;
+				position: absolute;
+				right: 2rem;
+				width: 11rem;
+				padding: 1rem;
+				
+				li{
+					margin-right: 0;
 				}
 				
 			}

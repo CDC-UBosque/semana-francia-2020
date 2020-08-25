@@ -31,7 +31,12 @@ section.diagonal{
 			
 			@media (max-width: 820px){
 				top: 0rem;
+				margin: -0.1rem -1.5rem;
 				background: $color_red;
+			}
+			
+			@media (max-width: $breakpoint_4){
+				@include grid-parent-1-columns (1fr);
 			}
 			
 			.comillas{
@@ -39,6 +44,12 @@ section.diagonal{
 				margin: auto;
 				@include grid-child-column (2, 3);
 				@include grid-child-row (1, 2);
+				
+				@media (max-width: $breakpoint_4){
+					@include grid-child-column (1, 2);
+					padding: 2rem 3rem 2rem 2rem ;
+				}
+				
 			}
 			
 		}	
@@ -66,8 +77,13 @@ section.number_one{
 	.content{
 		max-width: 1130px;
 		margin: auto;
+		grid-gap: 1rem;
 		@include display-grid;
 		@include grid-parent-2-columns (1fr, 2fr);
+		
+		@media (max-width: $breakpoint_3){
+			@include grid-parent-1-columns (1fr);
+		}
 		
 		div{
 			
@@ -75,6 +91,11 @@ section.number_one{
 				align-items: center;
 				@include display-grid;
 				@include grid-parent-2-columns (1fr, 5fr);
+				
+				@media (max-width: $breakpoint_3){
+					align-items: start;
+				}
+				
 			}
 			
 		}
