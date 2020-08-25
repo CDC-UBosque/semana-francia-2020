@@ -283,6 +283,7 @@ $font_family_group: $family) {
 	margin: 1rem;
 	cursor: pointer;
 	display: inline-block;
+	text-transform: uppercase;
 	@include font_universal (
 		$font_family_line_height: 23px,
 		$font_family_weight: 600,

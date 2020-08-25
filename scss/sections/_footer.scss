@@ -101,8 +101,14 @@ footer{
 			}
 			
 			.contact_names{
+				grid-gap: 1rem;
 				@include display-grid;
 				@include grid-parent-2-columns (1fr, 1fr);
+				
+				@media (max-width: $breakpoint_5){
+					@include grid-parent-1-columns (1fr);
+				}
+				
 			}
 			
 		}

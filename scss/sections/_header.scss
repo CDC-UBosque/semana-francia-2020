@@ -178,6 +178,11 @@ header{
 					margin-left: 4rem;
 					@include grid-child-column (1, 2);
 					@include grid-child-row (2, 3);
+					
+					@media (max-width: $breakpoint_3){
+						margin-left: 0;
+					}
+					
 				}
 				
 			}
